@@ -132,7 +132,7 @@ def main():
         - Take lighter breakfast.
         - Choose food with low glycemic value
          """)
-        if thalach> age-220:
+        if thalach> 220-age:
             st.write("""
             **Relatively high maximum heart rate achieved:**
             - Reduce coffee, tea and soda consumption.
