@@ -7,7 +7,7 @@ Dataset Link : https://ieee-dataport.org/open-access/heart-disease-dataset-compr
 Steps to Install Streamlit :
 pip install streamlit
 <br> <hr>
-for running the code :
+For running the code :
 streamlit run app.py ( open CMD in the same directory as the file ) 
 <hr>
 No. of rows : 1190 <br>
@@ -21,11 +21,11 @@ No. of columns : 0-11 as x and 12th as output <br>
 
 <b><h2>Inputs and outputs<h2></b>
 <h3>The below data is of two patients in which if the Target value is 0 then no chances of heart disease and if 1 then positive chances .</h3><br>
-<b>Inputs: </b>age	sex	chest-pain type	resting bps	cholesterol	fasting blood-sugar	resting ecg	max heart-rate	exercise-angina	oldpeak	ST slope <br>
+<b>Inputs: </b>age,	sex,chest-pain, type,	resting bps,	cholesterol,	fasting blood-sugar,	resting ecg,	max heart-rate,	exercise-angina,	oldpeak,	ST slope, <br>
 <b>Outputs: </b> target 
 
 <img src="Sample_data.PNG" height="100" width="800"></img>
-<li>For Sex ,it is 1 for male and 0 for female</li><br>
+<!-- <li>For Sex ,it is 1 for male and 0 for female</li><br> -->
 <hr>
 
 <b><h2>Algorithms used</h2></b>
@@ -34,7 +34,7 @@ No. of columns : 0-11 as x and 12th as output <br>
 <li>Decision Tree       : got 90% accuracy</li>
 <li>Random Forest       : got 94% accuracy</li>
 <hr>
-<b> As using the Random forest we got the heighest accuracy ,we had used this trained model in our web app </b>
+<b> As using the Random forest we got the highest accuracy ,we had used this trained model in our web app </b>
 <hr>
 
   <h2><b>I hope you like our application do it a try and raise a issue if anything is not proper </b></h2>
