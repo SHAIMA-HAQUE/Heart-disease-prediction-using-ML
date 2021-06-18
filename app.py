@@ -26,15 +26,17 @@ def main():
     slope = 1
     result = ""
 
-    age = st.slider("Age")
-    st.write("""Sex""")
+    st.write(""" ### Age""")
+    age = st.slider("Slide me")
+    st.write("""### Sex""")
     sex = st.checkbox("Male")
     sex = st.checkbox("Female")
     if sex == "Female":
         sex = 0
     if sex == "Male":
         sex = 1
-    cp = st.selectbox("Chest Pain Type",["Typical Angina","Atypical Angina","Non-Anginal Pain","Asymptomatic"])
+    st.write("### Chest Pain Type")
+    cp = st.selectbox("Select the suitable option",["Typical Angina","Atypical Angina","Non-Anginal Pain","Asymptomatic"])
     if cp == "Typical Angina":
         cp = 1
     elif cp == "Atypical Angina":
@@ -43,28 +45,36 @@ def main():
         cp = 3
     elif cp == "Asymptomatic":
         cp = 4
-    trestbps = st.number_input("Resting Blood Pressure",0,None)
-    chol = st.number_input("Cholesterol",0,None)
-    fbs1 = st.selectbox("Fasting Blood Sugar",["Greater than 120 mg/dl","Less than 120 mg/dl"])
+    st.write("### Resting Blood Pressure")
+    trestbps = st.number_input("Enter the value: ",0,None)
+    st.write("### Cholestrol")
+    chol = st.number_input("Enter the value:",0,None)
+    st.write("### Fasting Blood Sugar")
+    fbs1 = st.selectbox("Select the suitable option",["Greater than 120 mg/dl","Less than 120 mg/dl"])
     if fbs1 == "Greater than 120 mg/dl":
         fbs = 1
     elif fbs1 == "Less than 120 mg/dl":
         fbs = 0
-    restecg1 = st.selectbox("Resting Electrocardiographic Results",["Normal","ST_T wave abnormality","Showing probable or definite left ventricular hypertrophy by Estes' criteria"])
+    st.write("### Resting Electrocardiographic Results")
+    restecg1 = st.selectbox("Select the suitable option",["Normal","ST_T wave abnormality","Showing probable or definite left ventricular hypertrophy by Estes' criteria"])
     if restecg1 == "Normal":
         restecg = 0
     elif restecg1 == "ST_T wave abnormality":
         restecg = 1
     elif restecg1 == "Showing probable or definite left ventricular hypertrophy by Estes' criteria":
         restecg = 2 
-    thalach = st.number_input("Maximum Heart Rate Achieved ",71,202)
-    exang1 = st.selectbox("Exercise induced angina",["Yes","No"])
+    st.write("### Maximum Heart Rate Achieved")
+    thalach = st.number_input("Enter the value:",71,202)
+    st.write("### Exercise induced angina")
+    exang1 = st.selectbox("Select the suitable option",["Yes","No"])
     if exang1 == "Yes":
         exang = 1
     elif exang1 == "No":
         exang = 0 
-    oldpeak = st.number_input("ST Depression Induced by Exercise Relative to Rest",0.0,None)
-    slope1 = st.selectbox("The Slope of the Peak Exercise ST Segment",["Upsloping","Flat","Downsloping"])
+    st.write("### ST Depression Induced by Exercise Relative to Rest")
+    oldpeak = st.number_input("Enter the value:",0.0,None)
+    st.write("### The Slope of the Peak Exercise ST Segment")
+    slope1 = st.selectbox("Select the suitable option",["Upsloping","Flat","Downsloping"])
     if slope1 == "Upsloping":
         slope = 1
     elif slope1 == "Flat":
