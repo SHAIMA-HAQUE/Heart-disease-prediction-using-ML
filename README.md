@@ -21,7 +21,7 @@ No. of columns : 0-11 as x and 12th as output <br>
 
 <b><h2>Inputs and outputs<h2></b>
 <h3>The below data is of two patients in which if the Target value is 0 then no chances of heart disease and if 1 then positive chances .</h3><br>
-<b>Inputs: </b>age,	sex,chest-pain, type,	resting bps,	cholesterol,	fasting blood-sugar,	resting ecg,	max heart-rate,	exercise-angina,	oldpeak,	ST slope, <br>
+<b>Inputs: </b>age,	sex,chest-pain, type,	resting bps,	cholesterol,	fasting blood-sugar,	resting ecg,	max heart-rate,	exercise-angina,	oldpeak,	ST slope <br>
 <b>Outputs: </b> target 
 
 <img src="Sample_data.PNG" height="100" width="800"></img>
