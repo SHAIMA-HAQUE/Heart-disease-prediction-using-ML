@@ -45,12 +45,12 @@ def main():
         cp = 4
     trestbps = st.number_input("Resting Blood Pressure",0,None)
     chol = st.number_input("Cholesterol",0,None)
-    fbs1 = st.multiselect("Fasting Blood Sugar",["Greater than 120 mg/dl","Less than 120 mg/dl"])
+    fbs1 = st.selectbox("Fasting Blood Sugar",["Greater than 120 mg/dl","Less than 120 mg/dl"])
     if fbs1 == "Greater than 120 mg/dl":
         fbs = 1
     elif fbs1 == "Less than 120 mg/dl":
         fbs = 0
-    restecg1 = st.multiselect("Resting Electrocardiographic Results",["Normal","ST_T wave abnormality","Showing probable or definite left ventricular hypertrophy by Estes' criteria"])
+    restecg1 = st.selectbox("Resting Electrocardiographic Results",["Normal","ST_T wave abnormality","Showing probable or definite left ventricular hypertrophy by Estes' criteria"])
     if restecg1 == "Normal":
         restecg = 0
     elif restecg1 == "ST_T wave abnormality":
@@ -58,13 +58,13 @@ def main():
     elif restecg1 == "Showing probable or definite left ventricular hypertrophy by Estes' criteria":
         restecg = 2 
     thalach = st.number_input("Maximum Heart Rate Achieved ",71,202)
-    exang1 = st.multiselect("Exercise induced angina",["Yes","No"])
+    exang1 = st.selectbox("Exercise induced angina",["Yes","No"])
     if exang1 == "Yes":
         exang = 1
     elif exang1 == "No":
         exang = 0 
     oldpeak = st.number_input("ST Depression Induced by Exercise Relative to Rest",0.0,None)
-    slope1 = st.multiselect("The Slope of the Peak Exercise ST Segment",["Upsloping","Flat","Downsloping"])
+    slope1 = st.selectbox("The Slope of the Peak Exercise ST Segment",["Upsloping","Flat","Downsloping"])
     if slope1 == "Upsloping":
         slope = 1
     elif slope1 == "Flat":
