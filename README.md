@@ -37,7 +37,7 @@ No. of columns : 0-11 as x and 12th as output <br>
 <b> As using the Random forest we got the highest accuracy ,we had used this trained model in our web app </b>
 <hr>
 
-  <h2><b>I hope you like our application do it a try and raise a issue if anything is not proper </b></h2>
+  <h2><b>I hope you like our application, do give it a try and raise a issue if anything is not proper </b></h2>
 
 <hr>
   <b><h3>Made with efforts by Shaima and Shubham as a part of MLDLS 2021 project </h3></b>
