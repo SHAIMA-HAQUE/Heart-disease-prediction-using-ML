@@ -151,7 +151,7 @@ def main():
          """)
         if fbs == 1 :
             st.write("""
-            **High fasting blood pressure:**
+            **High fasting blood sugar:**
         - If you take diabetes medicine, change the timing or type by consulting a doctor
         - Take lighter breakfast.
         - Choose food with low glycemic value
